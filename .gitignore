@@ -6,9 +6,11 @@
 node_modules/**
 .svelte-kit/**
 build/**
+drizzle/**
 
 # Files
 .env
 package-lock.json
 yarn.lock
 pnpm-lock.yaml
+*.db
