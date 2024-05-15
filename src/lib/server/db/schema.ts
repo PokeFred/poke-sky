@@ -2,15 +2,15 @@ import { sqliteTable, text, int } from "drizzle-orm/sqlite-core"
 import type { SQLiteTable } from "drizzle-orm/sqlite-core"
 import type { InferSelectModel, InferInsertModel } from "drizzle-orm"
 
-export const item: SQLiteTable = sqliteTable("item", {
+export const items: SQLiteTable = sqliteTable("items", {
     productId: text("product_id", { length: 255 }),
     name: text("name", { length: 255 }),
     category: text("category", { length: 255 }),
     tier: text("tier", { length: 255 }),
     npcSellPrice: int("npc_sell_price"),
 })
-export type SelectItem = InferSelectModel<typeof item>
-export type InsertItem = InferInsertModel<typeof item>
+export type SelectItems = InferSelectModel<typeof items>
+export type InsertItems = InferInsertModel<typeof items>
 
 export const bazaar: SQLiteTable = sqliteTable("bazaar", {
     productId: text("product_id", { length: 255 }),
