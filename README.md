@@ -7,7 +7,7 @@
 
 ## Way 1 (Docker-Version)
 
-```bash
+```shell
 $ git clone https://github.com/PokeFred/poke-sky.git
 $ cd poke-sky
 
@@ -23,7 +23,7 @@ $ docker compose up --build -d
 
 ### base setup
 
-```bash
+```shell
 $ git clone https://github.com/PokeFred/poke-sky.git
 $ cd poke-sky
 $ npm install
@@ -31,13 +31,13 @@ $ npm install
 
 ### development environment
 
-```bash
+```shell
 $ npm run dev
 ```
 
 ### production environment
 
-```bash
+```shell
 $ npm run build
 $ npm start
 ```
