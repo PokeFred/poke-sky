@@ -1,0 +1,15 @@
+# IDE Stuff
+.vscode/**
+.idea/**
+
+# Folders
+node_modules/**
+.svelte-kit/**
+build/**
+drizzle/**
+
+# Files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+*.db
