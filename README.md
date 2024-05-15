@@ -1,43 +1,33 @@
 # Requirements
-
 - NodeJS v18
-- Docker and Docker Compose (optional for Docker Deployment)
+- Docker (optional)
+- Docker Compose (optional)
 
 # How to setup
-
-## Way 1 (Docker-Version)
-
-```shell
-$ git clone https://github.com/PokeFred/poke-sky.git
-$ cd poke-sky
-
-# Docker
-$ docker build --no-cache -t poke_sky
-$ docker run poke_sky
-
-# Docker Compose
-$ docker compose up --build -d
-```
-
-## Way 2 (Manuel)
-
-### base setup
-
-```shell
+## Development Environment
+```bash
 $ git clone https://github.com/PokeFred/poke-sky.git
 $ cd poke-sky
 $ npm install
-```
-
-### development environment
-
-```shell
+$ cp .env.example .env # You need to configure it a little bit yourself!!!
 $ npm run dev
 ```
 
-### production environment
+## Production Environment
+```bash
+$ git clone https://github.com/PokeFred/poke-sky.git
+$ cd poke-sky
+$ npm install
+$ cp .env.example .env # You need to configure it a little bit yourself!!!
 
-```shell
+# Way 1 (Docker Compose, prefered one)
+$ docker compose up --build -d
+
+# Way 2 (Docker)
+$ docker build --no-cache -t poke_sky
+$ docker run poke_sky
+
+# Way 3 (normal NodeJS)
 $ npm run build
 $ npm start
 ```
