@@ -12,8 +12,8 @@ const config = {
                 quoteProps: "preserve",
                 trailingComma: "all",
                 bracketSpacing: true,
-                arrowParens: "always"
-            }
+                arrowParens: "always",
+            },
         },
         {
             files: ["*.svelte"],
@@ -25,11 +25,11 @@ const config = {
                 svelteSortOrder: "options-scripts-markup-styles",
                 svelteStrictMode: false,
                 svelteAllowShorthand: false,
-                svelteIndentScriptAndStyle: true
-            }
-        }
+                svelteIndentScriptAndStyle: true,
+            },
+        },
     ],
-    plugins: ["prettier-plugin-svelte"]
+    plugins: ["prettier-plugin-svelte"],
 }
 
 export default config

@@ -10,11 +10,11 @@ const serverConfig: CommonServerOptions = {
     host: process.env.HOST ?? "localhost",
     port: Number(process.env.PORT) ?? 3000,
     strictPort: true,
-    proxy: {}
+    proxy: {},
 }
 
 export default defineConfig({
     server: serverConfig,
     preview: serverConfig,
-    plugins: [sveltekit(), enhancedImages(), mkcert()]
+    plugins: [sveltekit(), enhancedImages(), mkcert()],
 })

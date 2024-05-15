@@ -1,10 +1,13 @@
 # Requirements
-- NodeJS v18
-- Docker (optional)
-- Docker Compose (optional)
+
+-   NodeJS v18
+-   Docker (optional)
+-   Docker Compose (optional)
 
 # How to setup
+
 ## Development Environment
+
 ```bash
 $ git clone https://github.com/PokeFred/poke-sky.git
 $ cd poke-sky
@@ -14,6 +17,7 @@ $ npm run dev
 ```
 
 ## Production Environment
+
 ```bash
 $ git clone https://github.com/PokeFred/poke-sky.git
 $ cd poke-sky

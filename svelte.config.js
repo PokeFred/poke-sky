@@ -8,11 +8,11 @@ const config = {
         adapter: adapter({
             out: "./build",
             precompress: true,
-            envPrefix: ""
+            envPrefix: "",
         }),
         env: {
             publicPrefix: "PUBLIC_",
-            privatePrefix: "PRIVATE_"
+            privatePrefix: "PRIVATE_",
         },
         alias: {
             $server: "./src/lib/server",
@@ -21,9 +21,9 @@ const config = {
             $images: "./src/lib/images",
             $stores: "./src/lib/stores",
             $types: "./src/lib/types",
-            $styles: "./src/lib/styles"
-        }
-    }
+            $styles: "./src/lib/styles",
+        },
+    },
 }
 
 export default config
